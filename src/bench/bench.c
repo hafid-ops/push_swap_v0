@@ -58,13 +58,13 @@ static void	print_rotations(t_ctx *ctx)
 
 void	print_bench(t_ctx *ctx)
 {
-	put_str_fd("[bench] disorder: ", 2);
+	put_str_fd("[bench] Disorder: ", 2);
 	put_percent_fd(ctx->disorder, 2);
-	put_str_fd("\n[bench] strategy: ", 2);
+	put_str_fd("\n[bench] Strategy: ", 2);
 	put_str_fd(strategy_name(ctx), 2);
-	put_str_fd(" / ", 2);
+	put_str_fd("\n[bench] Complexity: ", 2);
 	put_str_fd(complexity_class(ctx), 2);
-	put_str_fd("\n[bench] total_ops: ", 2);
+	put_str_fd("\n[bench] Total operations: ", 2);
 	put_nbr_fd(total_ops(ctx), 2);
 	put_str_fd("\n", 2);
 	print_swaps_and_pushes(ctx);
